@@ -1,6 +1,7 @@
 const axios = require("axios");
 const diffParse = require("parse-git-diff");
 const { exec } = require("child_process");
+const { createCanvas, loadImage } = require('canvas')
 
 /**
  * @param {import('probot').Probot} app

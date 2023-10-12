@@ -19,7 +19,9 @@
     "axios": "^1.2.5",
     "node-fetch": "^3.3.0",
     "parse-git-diff": "^0.0.7",
-    "probot": "^12.2.4"
+    "probot": "^12.2.4",
+    "puppeteer": "^21.3.8",
+    "turtle-js": "^1.0.4"
   },
   "devDependencies": {
     "jest": "^29.0.0",
