@@ -13,7 +13,7 @@ console.log(`Checking js Errors in Domain : ${domain}`);
     const page = await browser.newPage();
 
 	page.on('pageerror', (error) => {
-		if( error.stack.includes('draw.js')) {
+		if( !error.stack.includes('turtle.js')) {
 			console.log(error)
 			process.exit(-1)
 		}
