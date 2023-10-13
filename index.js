@@ -91,7 +91,10 @@ module.exports = (app) => {
 
 			try {
 				const mergeRes = await context.octokit.pulls.merge(
-					context.repo({ pull_number: context.payload.pull_request.number })
+					context.repo({ 
+						pull_number: context.payload.pull_request.number ,
+						merge_method: 'squash',
+					})
 				);
 				exec("./updatesite.sh")
 				// exec("(cp /tmp/screenshot1.png /home/cliford/place/canvas.png)");
